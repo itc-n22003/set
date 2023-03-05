@@ -1,0 +1,5 @@
+#!/bin/bash
+
+PASS="PASSWORD"
+VPN="FULL_PATH"
+echo $PASS | sudo -S openvpn $VPN

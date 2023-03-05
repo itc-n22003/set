@@ -1,0 +1,4 @@
+#!/bin/bash
+
+PASS="PASSWORD"
+echo $PASS | sudo -S shutdown -h -F now

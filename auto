@@ -1,0 +1,10 @@
+#!/bin/bash
+
+PASS="PASSWORD"
+LIST=("update" "full-upgrade" "autoremove")
+
+for COMMAND in ${LIST[@]};
+do
+	echo $PASS | sudo -S apt -y $COMMAND
+done
+
