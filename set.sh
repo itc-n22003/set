@@ -2,6 +2,7 @@
 
 read -p "password -> " PASS
 sed -i "s/PASSWORD/$PASS/g" ./*
+sed -i "s/PASSWORD/$PASS/g" ./command/*
 
 ./brave.sh
 ./install.sh
